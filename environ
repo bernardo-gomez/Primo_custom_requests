@@ -1,0 +1,11 @@
+PYTHONIOENCODING=utf_8
+PYTHONPATH=/path_to/webserver/bin/Python
+LANG=en_US.UTF-8
+HOME=/path_to/webserver
+HOSTNAME=libapiproxyprod1
+KDEDIRS=/usr
+LOGNAME=webserver
+MAIL=/var/spool/mail/webserver
+PATH=/usr/lib/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/path_to/webserver/.local/bin:/path_to/webserver/bin
+SHELL=/bin/bash
+USER=webserver
