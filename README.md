@@ -59,7 +59,7 @@ Webservice **primo_request** resides on the API proxy server ( libapiproxyprod1.
    
    **/path_to/webserver/config/primo_request.cfg** ;
    
-   **/path_to/webserver/config/alma_request_table.txt** contains applicable requests  based on user_group, holding_library, location, material_type and whether bibliographic record is considered an “archive”.
+   **/path_to/webserver/config/alma_request_table.txt** contains applicable requests  based on user_group, holding_library, location, material_type and whether the bibliographic record is considered an “archive”.
    External view: https://kleene.library.emory.edu/alma_request_table.html
 
    **/path_to/webserver/bin/primo_request.py**  builds the list of applicable request links for the items belonging to the bibliographic record, based on alma_request_table.txt. List is packaged in XML object.
