@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# CGI wrapper for process_primo_request.py
+# Author: Bernardo Gomez.
+
+config="/usr/local/cgi-bin/" 
+. ${config}webserver_environ     # dot in environ variables
+
+# export all of the environ variables to my children
+for env_var in $(cat ${config}webserver_environ | awk -F'=' '{print $1}')
+do
+  export ${env_var}
+done
+
+
+/path_to/webserver/bin/webserverAccess /path_to/webserver/bin/process_primo_request.py /path_to/webserver/config/process_booking_primo_new.cfg
