@@ -40,6 +40,7 @@ int main (int argc, char *argv[]){
   k=0;
   for (i=1;i<argc ;i++){
       if (i == MAX_ARGS){   /* be safe */
+         argument[MAX_ARGS-1]=NULL;
          break;
       }
       argument[k]=argv[i];
